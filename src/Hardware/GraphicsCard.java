@@ -32,4 +32,6 @@ public class GraphicsCard {
         }
         System.out.println("Graphics displayed...");
     }
+
+
 }

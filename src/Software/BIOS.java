@@ -4,7 +4,6 @@ public class BIOS {
 
     private OperativtSystem OS;
 
-
     public BIOS(){
         OS = new OperativtSystem();
     }
@@ -46,6 +45,5 @@ public class BIOS {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        OS.showWelcomeScreen();
     }
 }

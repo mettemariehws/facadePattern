@@ -16,7 +16,18 @@ public class ComputerFacade {
     private OperativtSystem operativtSystem = new OperativtSystem();
 
     public void turnOn(){
+        powerSupply.startSupplyingPower();
+        motherBoard.startUp();
+        processor.startUp();
+        hdd.startUp();
+        ram.startUp();
+        graphicsCard.on();
 
+        bios.runPowerOnSelfTest();
+        bios.findBootDevice();
+        bios.loadOS();
+        bios.transControlToOS();
+        operativtSystem.showWelcomeScreen();
     }
 
     public void turnOff(){

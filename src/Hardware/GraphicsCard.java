@@ -14,4 +14,6 @@ public class GraphicsCard {
     public void displayGraphics(){
         System.out.println("Displaying graphics...");
     }
+
+
 }

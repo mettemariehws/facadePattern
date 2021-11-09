@@ -11,7 +11,11 @@ public class MotherBoard {
             e.printStackTrace();
         }
         System.out.println("Mobo started...");
-
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void shutDown(){
@@ -22,6 +26,10 @@ public class MotherBoard {
             e.printStackTrace();
         }
         System.out.println("Mobo off..");
-
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

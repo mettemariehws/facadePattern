@@ -11,7 +11,11 @@ public class RAM {
             e.printStackTrace();
         }
         System.out.println("RAM on...");
-
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void shutDown(){
@@ -24,5 +28,10 @@ public class RAM {
             e.printStackTrace();
         }
         System.out.println("RAM off...");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

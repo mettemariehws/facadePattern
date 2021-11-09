@@ -10,7 +10,11 @@ public class PowerSupply {
             e.printStackTrace();
         }
         System.out.println("Supplying power on...");
-
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void stopSupplyingPower(){
@@ -21,5 +25,10 @@ public class PowerSupply {
             e.printStackTrace();
         }
         System.out.println("Supplying power off...");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

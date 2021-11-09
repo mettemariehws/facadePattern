@@ -16,6 +16,11 @@ public class BIOS {
             e.printStackTrace();
         }
         System.out.println("Power self test complete");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void findBootDevice(){
@@ -25,7 +30,11 @@ public class BIOS {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("Boot device found");
+        System.out.println("Boot device found");try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void loadOS(){
@@ -36,6 +45,11 @@ public class BIOS {
             e.printStackTrace();
         }
         System.out.println("OS located and loaded");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void transControlToOS(){

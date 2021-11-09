@@ -11,6 +11,11 @@ public class GraphicsCard {
             e.printStackTrace();
         }
         System.out.println("Graphicscard on...");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void off(){
@@ -21,6 +26,11 @@ public class GraphicsCard {
             e.printStackTrace();
         }
         System.out.println("Graphicscard off...");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void displayGraphics(){
@@ -31,6 +41,11 @@ public class GraphicsCard {
             e.printStackTrace();
         }
         System.out.println("Graphics displayed...");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 
